@@ -23,11 +23,11 @@ import MediaBuilder from './photographers/MediaBuilder.js';
 
             //PHOTOGRAPHER GALLERY & LIKES BOX
             new MediaBuilder().photographersMedias(data);
-            return
+            return;
         }
         // HOMEPAGE (PHOTOGRAPHERS, SCROLL, FILTER)
         new HomePageBuilder().displayPhotographers(data);
     }).catch(() => {
         console.error('Failed to load ApiFishEye');
-    })
+    });
 })();
