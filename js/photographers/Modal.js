@@ -36,7 +36,7 @@ export default class Modal {
         const id = new URL(window.location.href).searchParams.get("id");
         let photographers = !id ? data : data.filter(photographer => photographer.id == id);
         let phName = document.getElementById('ph-form-name');
-        let phNameTemplate = `${photographers[0].name}`
+        let phNameTemplate = `${photographers[0].name}`;
         phName.innerHTML = phNameTemplate;
     }
 }

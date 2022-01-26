@@ -24,11 +24,11 @@ export default class HomePageBuilder {
             <p class="location">${photographe.city}, ${photographe.country}</p>
             <p class="tagline">${photographe.tagline}</p>
             <p class="price">${photographe.price}€/jour</p> 
-            `
+            `;
 
             sectionPhotographers.appendChild(articlePhotographers);
             articlePhotographers.innerHTML = templatePhotographer;
-        })
+        });
         
         new Scroll().scrollButton();
     }

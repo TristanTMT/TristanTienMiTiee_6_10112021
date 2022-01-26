@@ -39,7 +39,7 @@ export default class GalleryFactory {
                         <i class="far fa-heart heart-btn" aria-label='likes' role="button" data-value="${element.likes}"></i>
                         </div>
                     </div>
-                    `
+                    `;
                 } else {
                     workTemplate = `
                     <a href='#' title=''>
@@ -54,7 +54,7 @@ export default class GalleryFactory {
                         <i class="far fa-heart heart-btn" aria-label='likes' role="button" data-value="${element.likes}"></i>
                         </div>
                     </div>
-                    `
+                    `;
                 }
                 
                 articlePhWork.innerHTML = workTemplate;
@@ -64,9 +64,9 @@ export default class GalleryFactory {
                 currentMedia.push(mediaHTML.outerHTML);
                 currentMediaName.push(element.title);
                 (new Lightbox())
-                .init(currentMedia, currentMediaName)
+                .init(currentMedia, currentMediaName);
             }
-        })
+        });
         return this;
     }
 }

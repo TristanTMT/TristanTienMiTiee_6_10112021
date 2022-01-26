@@ -24,12 +24,12 @@ export default class LightBox {
             // if(lightBoxName.value[currentMediaName][index] === 'undefined') {
             //     document.getElementById('works-lightbox-name').style.display = 'none';
             // }
-        }))
+        }));
         this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName);
         this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName);
         this.close();
         this.keyboard(currentMedia, currentMediaName);
-        return this
+        return this;
     }
 
     // return to previous media
@@ -49,7 +49,7 @@ export default class LightBox {
 
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = ``;
-        })
+        });
     }
 
     // turn to the next media
@@ -68,7 +68,7 @@ export default class LightBox {
 
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = ``;
-        })
+        });
     }
 
     close() {
@@ -76,7 +76,7 @@ export default class LightBox {
             let lightbox = document.getElementById('works-lightbox');
 
             lightbox.style.display = 'none';
-        })
+        });
     }
 
     keyboard(currentMedia, currentMediaName) {

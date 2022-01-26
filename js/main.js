@@ -25,7 +25,7 @@ import MediaBuilder from './photographers/MediaBuilder.js';
             new MediaBuilder().photographersMedias(data);
             return;
         }
-        // HOMEPAGE (PHOTOGRAPHERS, SCROLL)
+        // HOMEPAGE (PHOTOGRAPHERS, SCROLL, FILTER)
         new HomePageBuilder().displayPhotographers(data);
     }).catch(() => {
         console.error('Failed to load ApiFishEye');

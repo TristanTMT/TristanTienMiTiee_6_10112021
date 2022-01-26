@@ -27,9 +27,9 @@ export default class MediaBuilder {
                 <span id="total-likes">${totalLike}</span>
                 <i class="fas fa-heart" aria-label='likes'></i>
                 <span>${element.price} €/ jour</span>
-                `
+                `;
                 box.innerHTML = boxTemplate;
             }
-        })
+        });
     }
 }

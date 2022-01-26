@@ -37,15 +37,15 @@ export default class DropDownMenu {
                 btnSort.innerHTML = `Popularité`;
 
                 mediaArraySort = media.sort((a, b) => { // SORT BY POPULARITY  
-                    return b.likes - a.likes
-                })
+                    return b.likes - a.likes;
+                });
 
             } else if (index == 1) {
                 btnSort.innerHTML = `Date`;
 
                 mediaArraySort = media.sort((a, b) => { // SORT BY DATE 
                     return new Date(a.date).valueOf() - new Date(b.date).valueOf();
-                })
+                });
 
             } else if (index == 2) {
                 btnSort.innerHTML = `Titre`;
@@ -56,7 +56,7 @@ export default class DropDownMenu {
                     } else if (a.title > b.title) {
                         return 1;
                     }
-                })
+                });
             }
             this.displaySortMedia(mediaArraySort);
         }));

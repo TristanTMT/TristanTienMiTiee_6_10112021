@@ -23,7 +23,7 @@ export default class PhotographerProfil {
                 <button id="ph-contact" title='Contact Me'>Contactez-moi</button>
                 <a href='#' title=''><img src="${photographers[0].portrait}" alt="Photo du photographe"></a>
             </article>
-            `
+            `;
 
         sectionPhotographerProfil.innerHTML = templatePhotographerProfil;
         new Modal().modal(photographersData);

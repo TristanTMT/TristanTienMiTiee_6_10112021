@@ -27,6 +27,6 @@ export default class LikeSubscriber {
                     e.target.classList.replace('far', 'fas');
                 }
             }
-        })
+        });
     }
 }

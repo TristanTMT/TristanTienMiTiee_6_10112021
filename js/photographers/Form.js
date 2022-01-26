@@ -50,7 +50,7 @@ export class Form {
 
     // Check FirstName and LastName
     checkNames(elt, regex) {
-        if (elt.value.trim().length < 2 || elt.value.trim() === "" || !elt.value.match(regex)) {
+        if (elt.value.trim().length < 2 || elt.value.trim() === '' || !elt.value.match(regex)) {
             elt.parentElement.setAttribute('data-error-visible', 'true');
             elt.style.border = '2px solid #e54858';
             return false;
